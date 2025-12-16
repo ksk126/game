@@ -536,8 +536,6 @@ def showCharacter(player):
     req = required_exp(player.level)
     print(f"LV: {player.level}  EXP: {player.exp}/{req}")
     print(f"GOLD: {player.gold}  환생: {player.rebirth}  진행층: {player.current_floor}")
-    # 인벤토리 표시는 제거, 장비창만
-    showEquipment(player)
 
 def setBossName():
     try:
