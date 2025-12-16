@@ -282,9 +282,9 @@ def shop_items_by_floor(player):
         "방패": ITEM_PRICES["방패"]["buy"],
         "강화석": ITEM_PRICES["강화석"]["buy"]
     }
-    if player.current_floor >= 5:
+    if player.current_floor > 5:
         items["최고급 포션"] = ITEM_PRICES["최고급 포션"]["buy"]
-    if player.current_floor >= 10:
+    if player.current_floor > 10:
         items["전설의 검"] = ITEM_PRICES["전설의 검"]["buy"]
         items["전설의 방패"] = ITEM_PRICES["전설의 방패"]["buy"]
     return items
